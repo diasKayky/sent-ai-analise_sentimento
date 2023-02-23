@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://github.com/diasKayky/sent-ai-analise_sentimento/blob/main/logo.png" data-canonical-src="https://github.com/diasKayky/sent-ai-analise_sentimento/blob/main/logo.png" width="400" style="text-align: center;" height="200"/>
+    <img src="https://github.com/diasKayky/sent-ai-analise_sentimento/blob/main/logo.png" data-canonical-src="https://github.com/diasKayky/sent-ai-analise_sentimento/blob/main/logo.png" width="340" style="text-align: center;" height="180"/>
 </p>
 
 # Sent.AI: Análise de Sentimento usando LSTM
