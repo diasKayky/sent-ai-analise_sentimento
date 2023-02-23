@@ -1,2 +1,2 @@
-# SentAI: Modelo de LSTM que analisa de sentimento de textos
+# Sent.AI: Modelo de LSTM que analisa de sentimento de textos
  
