@@ -1,2 +1,2 @@
-# analise-sentimento
+# Sent.AI: Análise de Sentimento usando LSTM
  
