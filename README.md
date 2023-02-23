@@ -7,11 +7,12 @@
 > Uma empresa que oferece um produto precisa analisar as avaliações das vendas online da mercadoria. Para tal, é desenvolvido um modelo de ML utilizando a rede neural LSTM (memória de longo curto prazo) para realizar processamento de linguagem natural (NLP) e classificar a entrada de texto em "positiva" ou "negativa".
 
 
-1. Desenvolvimento da pipeline de dados (ETL) utilizando o Pyspark
+1. Exploração e Preprocessamento de Dados (lematização, tokenização das entradas de texto)
 2. Carregamento dos dados que serão utilizados pelo modelo
-3. Treinamento e avaliação do modelo de Random Forest
-4. Serialização do modelo
-5. Deploy do modelo via API Flask
+3. Construção da arquitetura do modelo LSTM
+4. Treinamento e avaliação do modelo de LSTM
+5. Serialização do modelo
+6. Deploy do modelo via web app Streamlit
 
 ##  💻 Desenvolvedor
 
