@@ -14,6 +14,12 @@
 5. Serialização do modelo
 6. Deploy do modelo via web app Streamlit
 
+# Screenshot em execução
+
+<p align="center">
+    <img src="https://github.com/diasKayky/sent-ai-analise_sentimento/blob/main/image.jpeg" data-canonical-src="hthttps://github.com/diasKayky/sent-ai-analise_sentimento/blob/main/image.jpeg" width="550" style="text-align: center;" height="470"/>
+</p>
+
 ##  💻 Desenvolvedor
 
 
