@@ -1,16 +1,19 @@
 import streamlit as st
 import pickle as pl
+import tensorflow.keras.backend as K
 import numpy as np
 import time
 from libretranslatepy import LibreTranslateAPI
 import re
 import nltk
 from nltk.corpus import stopwords
+import tensorflow as tf
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-X_train_deploy = pl.load(open('C:/Users/Kayky/Downloads/Python/Sentiment_Analysis/data/processed/X_train_deploy.pkl', 'rb'))
-modelo = pl.load(open('C:/Users/Kayky/Downloads/Python/Sentiment_Analysis/src/model/modelo.pkl', 'rb'))
+X_train_deploy = pl.load(open('C:/Users/Kayky/Downloads/Python/Archive/Sentiment_Analysis/data/processed/X_train_deploy.pkl', 'rb'))
+modelo = pl.load(open('C:/Users/Kayky/Downloads/Python/Archive/Sentiment_Analysis/src/model/modelo.pkl', 'rb'))
+#modelo = tf.keras.models.load_model('C:/Users/Kayky/Downloads/Python/Archive/Sentiment_Analysis/src/model/modelo.h5')
 
 def prep_dados(texto: str):
     # Limpa o texto (remove alfanuméricos, simbolos, etc.)
@@ -36,14 +39,13 @@ def prep_dados(texto: str):
 
     # Tokeniza
 
-    vocabulario_tamanho = 13000
     oov_tok = "<OOV>"
-    tokenizador = Tokenizer(num_words=vocabulario_tamanho, oov_token=oov_tok)
+    tokenizador = Tokenizer(oov_token=oov_tok)
     tokenizador.fit_on_texts(X_train_deploy)
     dados_prep = tokenizador.texts_to_sequences(dados_prep)
 
     # Padding para adequar o tamanho da sequência
-    tamanho_frase = 250
+    tamanho_frase = 400
     dados_prep = pad_sequences(dados_prep, maxlen=tamanho_frase, padding='post', truncating='post')
 
     return dados_prep
@@ -64,11 +66,11 @@ if st.button("Enviar para predição"):
         time.sleep(0.2)
         barra.progress(porcento + 1, text=t)
 
-    lt = LibreTranslateAPI("https://translate.argosopentech.com/")
+    #lt = LibreTranslateAPI("https://translate.argosopentech.com/")
 
-    transl = lt.translate(texto, "pt", "en")
+    #transl = lt.translate(texto, "pt", "en")
 
-    dados = prep_dados(transl)
+    dados = prep_dados(texto)
 
     predicted = modelo.predict(dados)
 

@@ -1,0 +1,1 @@
+X_train é um arquivo pickle maior que 100MB, portanto não pode ser feito commit dele no Github.
