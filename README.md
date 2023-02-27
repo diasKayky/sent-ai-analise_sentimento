@@ -4,7 +4,7 @@
 
 # Sent.AI: Análise de Sentimento usando LSTM
 
-> Uma empresa que oferece um produto precisa analisar as avaliações das vendas online da mercadoria. Para tal, é desenvolvido um modelo de ML utilizando a rede neural LSTM (memória de longo curto prazo) para realizar processamento de linguagem natural (NLP) e classificar a entrada de texto em "positiva" ou "negativa".
+> Uma empresa que oferece um produto precisa analisar as centenas de avaliações das vendas online da mercadoria. Para tal, é desenvolvido um modelo de ML utilizando a rede neural LSTM (memória de longo curto prazo) para realizar processamento de linguagem natural (NLP) e classificar a entrada de texto em "positiva" ou "negativa". O modelo prediz com acurácia de 90% o tom das avaliações, permitindo que todas as avaliações sejam processadas rapidamente e com eficiência para posterior análise descritiva e tomada de decisão.
 
 
 1. Exploração e Preprocessamento de Dados (lematização, tokenização das entradas de texto)
