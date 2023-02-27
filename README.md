@@ -8,10 +8,10 @@
 
 
 1. Exploração e Preprocessamento de Dados (lematização, tokenização das entradas de texto)
-2. Carregamento dos dados que serão utilizados pelo modelo
-3. Construção da arquitetura do modelo LSTM
+2. Carregamento dos dados que serão utilizados pelo modelo (Tweets e Reviews IMDB)
+3. Construção da arquitetura do modelo LSTM Bidirecional com Mecanismo de Atenção
 4. Treinamento e avaliação do modelo de LSTM
-5. Serialização do modelo
+5. Armazenamento do modelo
 6. Deploy do modelo via web app Streamlit
 
 # Screenshot em execução
