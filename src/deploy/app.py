@@ -70,7 +70,7 @@ if st.button("Enviar para predição"):
 
     transl = lt.translate(texto, "pt", "en")
 
-    dados = prep_dados(texto)
+    dados = prep_dados(transl)
 
     predicted = modelo.predict(dados)
 
