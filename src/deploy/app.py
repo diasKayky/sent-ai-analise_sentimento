@@ -66,9 +66,9 @@ if st.button("Enviar para predição"):
         time.sleep(0.2)
         barra.progress(porcento + 1, text=t)
 
-    #lt = LibreTranslateAPI("https://translate.argosopentech.com/")
+    lt = LibreTranslateAPI("https://translate.argosopentech.com/")
 
-    #transl = lt.translate(texto, "pt", "en")
+    transl = lt.translate(texto, "pt", "en")
 
     dados = prep_dados(texto)
 
