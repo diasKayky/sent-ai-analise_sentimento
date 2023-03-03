@@ -12,7 +12,7 @@
 4. Treinamento e avaliação do modelo de LSTM
 5. Armazenamento do modelo
 6. Deploy do modelo via web app Streamlit
-7. Em desenvolvimento: deploy em Javascript para rodar em browsers sem backend.
+7. Em desenvolvimento: Website com deploy em Javascript para rodar em browsers usando Tensorflow.js.
 
 # Screenshot em execução
 
